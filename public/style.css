@@ -26,9 +26,12 @@ body {
   background-size: cover;
   background-image: url(
       'https://images.unsplash.com/photo-1578632749014-ca77efd052eb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=clip&w=1000&q=70');
+      
+  display: flex;
+  flex-direction: column;
 }
 .header {
-  height: 30px;
+  height: 30vh;
 }
 
 
@@ -49,4 +52,34 @@ body {
 
 .header-container p{
     margin: 16px;
+}
+
+.main {
+    height: 70vh;
+}
+.random {
+    margin-top: 2rem;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.random-btn{
+    background-color: white; /* Green */
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.random-btn:hover{
+    background-color: black; /* Green */
+    color: white;
 }
